@@ -31,14 +31,20 @@ namespace LibraryManagementSystem.Api
             }
         }
 
-        public static void AddNewBook(Book book)
+        public static List<int> AddNewBook(Book book, int qty)
         {
             using (var context = new LibraryContext())
             {
+                var ids = new List<int>();
                 book.IsBorrowed = false;
                 book.IsDeleted = false;
-                context.Books.Add(book);
-                context.SaveChanges();
+                for (int i = 0; i < qty; i++)
+                {
+                    context.Books.Add(book);
+                    context.SaveChanges();
+                    ids.Add(context.Books.OrderByDescending(b => b.Id).First().Id);
+                }
+                return ids;
             }
         }
 
