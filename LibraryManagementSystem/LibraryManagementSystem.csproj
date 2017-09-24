@@ -66,6 +66,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Functions.cs" />
     <Compile Include="Librarian.cs" />
     <Compile Include="LibraryContext.cs" />
     <Compile Include="Member.cs" />
@@ -73,11 +74,18 @@
     <Compile Include="Migrations\201709240740099_InitialModel.Designer.cs">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.cs" />
+    <Compile Include="Migrations\201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.Designer.cs">
+      <DependentUpon>201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Migrations\201709240740099_InitialModel.resx">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.resx">
+      <DependentUpon>201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
