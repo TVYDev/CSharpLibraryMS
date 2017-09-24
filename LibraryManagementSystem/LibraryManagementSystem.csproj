@@ -55,6 +55,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\MemberApi.cs" />
     <Compile Include="DomainModels\Book.cs" />
     <Compile Include="DomainModels\Borrowing.cs" />
     <Compile Include="EntityConfigurations\BookConfigurations.cs" />
@@ -78,6 +79,10 @@
     <Compile Include="Migrations\201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.Designer.cs">
       <DependentUpon>201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.cs" />
+    <Compile Include="Migrations\201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.Designer.cs">
+      <DependentUpon>201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.resx">
       <DependentUpon>201709240856093_AddIsDeletedColumnToBookAndLibrarianAndMemberClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.resx">
+      <DependentUpon>201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

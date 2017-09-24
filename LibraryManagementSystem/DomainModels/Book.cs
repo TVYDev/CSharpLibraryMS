@@ -15,5 +15,9 @@
         public bool IsBorrowed { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public int Qty { get; set; }
+
+        public int QtyAvailable { get; set; }
     }
 }
