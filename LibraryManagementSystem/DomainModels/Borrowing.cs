@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LibraryManagementSystem
+namespace LibraryManagementSystem.DomainModels
 {
     public class Borrowing
     {

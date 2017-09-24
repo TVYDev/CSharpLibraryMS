@@ -1,18 +1,20 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
 
-namespace LibraryManagementSystem
+namespace LibraryManagementSystem.DomainModels
 {
-    public class Librarian
+    public class Member
     {
         public int Id { get; set; }
 
         public string Name { get; set; }
 
-        public string Password { get; set; }
-
         public string Phone { get; set; }
 
         public string Address { get; set; }
+
+        public DateTime DateOfMembership { get; set; }
+
+        public byte MaxBookLimit { get; set; }
 
         public bool IsDeleted { get; set; }
     }

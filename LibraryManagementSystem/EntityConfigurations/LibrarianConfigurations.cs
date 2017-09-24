@@ -1,4 +1,5 @@
 ﻿using System.Data.Entity.ModelConfiguration;
+using LibraryManagementSystem.DomainModels;
 
 namespace LibraryManagementSystem.EntityConfigurations
 {
