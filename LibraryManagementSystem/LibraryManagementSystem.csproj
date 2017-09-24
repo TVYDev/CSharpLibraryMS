@@ -55,14 +55,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Book.cs" />
+    <Compile Include="Borrowing.cs" />
+    <Compile Include="EntityConfigurations\BookConfigurations.cs" />
+    <Compile Include="EntityConfigurations\LibrarianConfigurations.cs" />
+    <Compile Include="EntityConfigurations\MemberConfigurations.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Librarian.cs" />
+    <Compile Include="LibraryContext.cs" />
+    <Compile Include="Member.cs" />
+    <Compile Include="Migrations\201709240740099_InitialModel.cs" />
+    <Compile Include="Migrations\201709240740099_InitialModel.Designer.cs">
+      <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Migrations\201709240740099_InitialModel.resx">
+      <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -86,6 +102,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
