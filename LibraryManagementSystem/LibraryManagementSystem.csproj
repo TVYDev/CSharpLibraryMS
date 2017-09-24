@@ -83,6 +83,10 @@
     <Compile Include="Migrations\201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.Designer.cs">
       <DependentUpon>201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.cs" />
+    <Compile Include="Migrations\201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.Designer.cs">
+      <DependentUpon>201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +101,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.resx">
       <DependentUpon>201709241107238_AddQtyAndQtyAvailableColumnsToBookTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.resx">
+      <DependentUpon>201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
