@@ -9,5 +9,6 @@ namespace LibraryManagementSystem
     public static class PredefinedRules
     {
         public const int MaxBookBorrow = 2;
+        public const int ShownPerPage = 5;
     }
 }
