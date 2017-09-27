@@ -45,6 +45,8 @@ namespace LibraryManagementSystem.Api
                                                      .ToList();
                 }
 
+                if (books.Count == 0)
+                    throw new InvalidOperationException("Book not found");
                 return books;
             }
         }
