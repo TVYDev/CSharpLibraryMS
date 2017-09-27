@@ -18,6 +18,8 @@
 
         public int GroupId { get; set; }
 
-        public byte[] Cover { get; set; }
+        public int CoverId { get; set; }
+
+        public BookCover Cover { get; set; }
     }
 }

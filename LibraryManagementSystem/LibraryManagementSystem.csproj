@@ -57,6 +57,7 @@
   <ItemGroup>
     <Compile Include="Api\MemberApi.cs" />
     <Compile Include="DomainModels\Book.cs" />
+    <Compile Include="DomainModels\BookCover.cs" />
     <Compile Include="DomainModels\Borrowing.cs" />
     <Compile Include="EntityConfigurations\BookConfigurations.cs" />
     <Compile Include="EntityConfigurations\LibrarianConfigurations.cs" />
@@ -95,6 +96,10 @@
     <Compile Include="Migrations\201709270731597_AddPhotoColumnToLibrariansAndMembersTable.Designer.cs">
       <DependentUpon>201709270731597_AddPhotoColumnToLibrariansAndMembersTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709270818308_AddBookCoverTable.cs" />
+    <Compile Include="Migrations\201709270818308_AddBookCoverTable.Designer.cs">
+      <DependentUpon>201709270818308_AddBookCoverTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PredefinedRules.cs" />
     <Compile Include="Program.cs" />
@@ -119,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709270731597_AddPhotoColumnToLibrariansAndMembersTable.resx">
       <DependentUpon>201709270731597_AddPhotoColumnToLibrariansAndMembersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270818308_AddBookCoverTable.resx">
+      <DependentUpon>201709270818308_AddBookCoverTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

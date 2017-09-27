@@ -20,7 +20,8 @@ namespace LibraryManagementSystem.EntityConfigurations
                 .HasMaxLength(255)
                 .IsRequired();
 
-            
+            HasRequired(b => b.Cover)
+                .WithRequiredPrincipal(c => c.Book);
         }
     }
 }

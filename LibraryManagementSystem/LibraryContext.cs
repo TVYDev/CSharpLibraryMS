@@ -15,6 +15,7 @@ namespace LibraryManagementSystem
         public DbSet<Member> Members { get; set; }
         public DbSet<Librarian> Librarians { get; set; }
         public DbSet<Borrowing> Borrowings { get; set; }
+        public DbSet<BookCover> BookCovers { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
