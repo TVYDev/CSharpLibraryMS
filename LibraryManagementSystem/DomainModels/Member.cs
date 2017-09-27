@@ -17,5 +17,7 @@ namespace LibraryManagementSystem.DomainModels
         public byte MaxBookLimit { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public byte[] Photo { get; set; }
     }
 }

@@ -15,5 +15,9 @@
         public bool IsBorrowed { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public int GroupId { get; set; }
+
+        public byte[] Cover { get; set; }
     }
 }

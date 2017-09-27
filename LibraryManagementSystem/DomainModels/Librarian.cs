@@ -13,5 +13,7 @@
         public string Address { get; set; }
 
         public bool IsDeleted { get; set; }
+
+        public byte[] Photo { get; set; }
     }
 }

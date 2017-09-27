@@ -87,7 +87,16 @@
     <Compile Include="Migrations\201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.Designer.cs">
       <DependentUpon>201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709270730391_AddGroupIdAndCoverColumnsToBookTable.cs" />
+    <Compile Include="Migrations\201709270730391_AddGroupIdAndCoverColumnsToBookTable.Designer.cs">
+      <DependentUpon>201709270730391_AddGroupIdAndCoverColumnsToBookTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709270731597_AddPhotoColumnToLibrariansAndMembersTable.cs" />
+    <Compile Include="Migrations\201709270731597_AddPhotoColumnToLibrariansAndMembersTable.Designer.cs">
+      <DependentUpon>201709270731597_AddPhotoColumnToLibrariansAndMembersTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PredefinedRules.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -104,6 +113,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.resx">
       <DependentUpon>201709241124298_RemoveQtyAndQtyAvailableColumnsFromBookTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270730391_AddGroupIdAndCoverColumnsToBookTable.resx">
+      <DependentUpon>201709270730391_AddGroupIdAndCoverColumnsToBookTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709270731597_AddPhotoColumnToLibrariansAndMembersTable.resx">
+      <DependentUpon>201709270731597_AddPhotoColumnToLibrariansAndMembersTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
