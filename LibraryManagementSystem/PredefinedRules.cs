@@ -10,5 +10,6 @@ namespace LibraryManagementSystem
     {
         public const int MaxBookBorrow = 2;
         public const int ShownPerPage = 5;
+        public const int AllowedDaysToBorrow = 7;
     }
 }

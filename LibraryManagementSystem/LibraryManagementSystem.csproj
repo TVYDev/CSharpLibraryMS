@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\BorrowingApi.cs" />
     <Compile Include="Api\LibrarianApi.cs" />
     <Compile Include="Api\MemberApi.cs" />
     <Compile Include="DomainModels\Book.cs" />
@@ -110,6 +111,10 @@
     <Compile Include="Migrations\201709270818308_AddBookCoverTable.Designer.cs">
       <DependentUpon>201709270818308_AddBookCoverTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.cs" />
+    <Compile Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.Designer.cs">
+      <DependentUpon>201710010854443_AddIsReturnedColumnToBorrowingTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PredefinedRules.cs" />
     <Compile Include="Program.cs" />
@@ -137,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709270818308_AddBookCoverTable.resx">
       <DependentUpon>201709270818308_AddBookCoverTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.resx">
+      <DependentUpon>201710010854443_AddIsReturnedColumnToBorrowingTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

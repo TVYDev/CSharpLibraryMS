@@ -25,5 +25,7 @@ namespace LibraryManagementSystem.DomainModels
         public DateTime BorrowDate { get; set; }
 
         public DateTime DueDate { get; set; }
+
+        public bool IsReturned { get; set; }
     }
 }
