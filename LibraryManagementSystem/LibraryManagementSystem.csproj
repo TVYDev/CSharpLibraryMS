@@ -49,9 +49,11 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -73,11 +75,11 @@
     <Compile Include="EntityConfigurations\BookConfigurations.cs" />
     <Compile Include="EntityConfigurations\LibrarianConfigurations.cs" />
     <Compile Include="EntityConfigurations\MemberConfigurations.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Api\BookApi.cs" />
     <Compile Include="DomainModels\Librarian.cs" />
@@ -119,8 +121,8 @@
     <Compile Include="PredefinedRules.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709240740099_InitialModel.resx">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
@@ -148,13 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
@@ -162,6 +160,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -171,7 +174,36 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bookshelf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Borrow_Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return_Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Minimize Window.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
