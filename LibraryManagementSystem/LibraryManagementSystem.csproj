@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Bunifu_UI_v1.5.3">
-      <HintPath>C:\Users\TVY\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
-    </Reference>
     <Reference Include="DevOne.Security.Cryptography.BCrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\BCrypt.1.0.0.0\lib\DevOne.Security.Cryptography.BCrypt.dll</HintPath>
       <Private>True</Private>
@@ -75,11 +72,17 @@
     <Compile Include="EntityConfigurations\BookConfigurations.cs" />
     <Compile Include="EntityConfigurations\LibrarianConfigurations.cs" />
     <Compile Include="EntityConfigurations\MemberConfigurations.cs" />
-    <Compile Include="MainForm.cs">
+    <Compile Include="frmAddBook.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <Compile Include="frmAddBook.Designer.cs">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Api\BookApi.cs" />
     <Compile Include="DomainModels\Librarian.cs" />
@@ -121,8 +124,11 @@
     <Compile Include="PredefinedRules.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddBook.resx">
+      <DependentUpon>frmAddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709240740099_InitialModel.resx">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
@@ -203,6 +209,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Minimize Window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reset_Filled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Authors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Isbn_number.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Titles.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Year_Edition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quantity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QR_code.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Done.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

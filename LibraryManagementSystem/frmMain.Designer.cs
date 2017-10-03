@@ -1,6 +1,6 @@
 ﻿namespace LibraryManagementSystem
 {
-    partial class MainForm
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +44,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnDisplay = new System.Windows.Forms.Panel();
             this.pnSelect = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -255,7 +255,7 @@
             this.label2.AutoSize = true;
             this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(219, 9);
+            this.label2.Location = new System.Drawing.Point(219, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(182, 21);
             this.label2.TabIndex = 11;
@@ -266,19 +266,19 @@
             this.label4.AutoSize = true;
             this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(422, 9);
+            this.label4.Location = new System.Drawing.Point(422, 7);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 21);
             this.label4.TabIndex = 13;
             this.label4.Text = "01:42:10 AM";
             // 
-            // panel3
+            // pnDisplay
             // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Location = new System.Drawing.Point(214, 46);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1135, 670);
-            this.panel3.TabIndex = 14;
+            this.pnDisplay.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnDisplay.Location = new System.Drawing.Point(214, 46);
+            this.pnDisplay.Name = "pnDisplay";
+            this.pnDisplay.Size = new System.Drawing.Size(1135, 670);
+            this.pnDisplay.TabIndex = 14;
             // 
             // pnSelect
             // 
@@ -288,14 +288,14 @@
             this.pnSelect.Size = new System.Drawing.Size(8, 73);
             this.pnSelect.TabIndex = 0;
             // 
-            // MainForm
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(1366, 728);
             this.Controls.Add(this.pnSelect);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.pnDisplay);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button8);
@@ -303,7 +303,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MainForm";
+            this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "MainForm";
             this.Load += new System.EventHandler(this.MainForm_Load);
@@ -333,7 +333,7 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnDisplay;
         private System.Windows.Forms.Panel pnSelect;
     }
 }

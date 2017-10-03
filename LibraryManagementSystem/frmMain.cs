@@ -13,9 +13,9 @@ using DevOne.Security.Cryptography.BCrypt;
 
 namespace LibraryManagementSystem
 {
-    public partial class MainForm : Form
+    public partial class frmMain : Form
     {
-        public MainForm()
+        public frmMain()
         {
             InitializeComponent();
             StylingForm();
@@ -23,7 +23,7 @@ namespace LibraryManagementSystem
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void StylingForm()
@@ -32,6 +32,8 @@ namespace LibraryManagementSystem
 
             Width = Screen.PrimaryScreen.WorkingArea.Width;
             Height = Screen.PrimaryScreen.WorkingArea.Height;
+
+            pnDisplay.BackColor = this.BackColor;
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -54,6 +56,16 @@ namespace LibraryManagementSystem
 
         private void btnAddBook_Click(object sender, EventArgs e)
         {
+            if (!pnDisplay.Controls.Contains(frmAddBook.GetInstance))
+            {
+                pnDisplay.Controls.Clear();
+                var formAddBook = frmAddBook.GetInstance;
+                formAddBook.TopLevel = false;
+                formAddBook.BackColor = this.BackColor;
+                pnDisplay.Controls.Add(formAddBook);
+                formAddBook.Show();
+            }
+
             pnSelect.Height = btnAddBook.Height;
             pnSelect.Top = btnAddBook.Top;
         }
