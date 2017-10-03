@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.DomainModels
 {
-    public class BookCover
+    public class Cover
     {
         public int Id { get; set; }
 
-        public byte[] Cover { get; set; }
-
-        public Book Book { get; set; }
+        public byte[] Image { get; set; }
     }
 }

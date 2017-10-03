@@ -30,21 +30,24 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.txtTitle = new System.Windows.Forms.TextBox();
             this.txtAuthor = new System.Windows.Forms.TextBox();
-            this.cboYearEdition = new System.Windows.Forms.ComboBox();
             this.txtIsbn = new System.Windows.Forms.TextBox();
             this.numQty = new System.Windows.Forms.NumericUpDown();
             this.btnBrowse = new System.Windows.Forms.Button();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnIdGenerated = new System.Windows.Forms.Panel();
-            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.btnCreateQrCode = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
+            this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.txtYearEdition = new System.Windows.Forms.TextBox();
+            this.lblRequiredTitle = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,6 +56,8 @@
             this.picCover = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblRequiredAuthor = new System.Windows.Forms.Button();
+            this.lblRequiredEdition = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numQty)).BeginInit();
             this.pnIdGenerated.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCover)).BeginInit();
@@ -74,6 +79,7 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape4,
             this.lineShape3,
             this.lineShape2,
             this.lineShape1,
@@ -81,6 +87,14 @@
             this.shapeContainer1.Size = new System.Drawing.Size(1135, 670);
             this.shapeContainer1.TabIndex = 1;
             this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape4
+            // 
+            this.lineShape4.Name = "lineShape4";
+            this.lineShape4.X1 = 454;
+            this.lineShape4.X2 = 569;
+            this.lineShape4.Y1 = 281;
+            this.lineShape4.Y2 = 281;
             // 
             // lineShape3
             // 
@@ -122,6 +136,7 @@
             this.txtTitle.Name = "txtTitle";
             this.txtTitle.Size = new System.Drawing.Size(674, 20);
             this.txtTitle.TabIndex = 0;
+            this.txtTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtAuthor
             // 
@@ -132,18 +147,7 @@
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(674, 20);
             this.txtAuthor.TabIndex = 1;
-            // 
-            // cboYearEdition
-            // 
-            this.cboYearEdition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
-            this.cboYearEdition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cboYearEdition.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboYearEdition.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.cboYearEdition.FormattingEnabled = true;
-            this.cboYearEdition.Location = new System.Drawing.Point(453, 252);
-            this.cboYearEdition.Name = "cboYearEdition";
-            this.cboYearEdition.Size = new System.Drawing.Size(121, 29);
-            this.cboYearEdition.TabIndex = 3;
+            this.txtAuthor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtIsbn
             // 
@@ -151,9 +155,12 @@
             this.txtIsbn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtIsbn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIsbn.Location = new System.Drawing.Point(393, 200);
+            this.txtIsbn.MaxLength = 10;
             this.txtIsbn.Name = "txtIsbn";
             this.txtIsbn.Size = new System.Drawing.Size(297, 20);
             this.txtIsbn.TabIndex = 2;
+            this.txtIsbn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtIsbn.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIsbn_KeyPress);
             // 
             // numQty
             // 
@@ -181,12 +188,13 @@
             this.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBrowse.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBrowse.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBrowse.Location = new System.Drawing.Point(93, 232);
+            this.btnBrowse.Location = new System.Drawing.Point(68, 233);
             this.btnBrowse.Name = "btnBrowse";
             this.btnBrowse.Size = new System.Drawing.Size(85, 29);
             this.btnBrowse.TabIndex = 5;
             this.btnBrowse.Text = "Browse";
             this.btnBrowse.UseVisualStyleBackColor = true;
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
             // rectangleShape2
             // 
@@ -209,17 +217,6 @@
             this.pnIdGenerated.Size = new System.Drawing.Size(959, 72);
             this.pnIdGenerated.TabIndex = 16;
             // 
-            // shapeContainer2
-            // 
-            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
-            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
-            this.shapeContainer2.Name = "shapeContainer2";
-            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape2});
-            this.shapeContainer2.Size = new System.Drawing.Size(959, 72);
-            this.shapeContainer2.TabIndex = 0;
-            this.shapeContainer2.TabStop = false;
-            // 
             // btnCreateQrCode
             // 
             this.btnCreateQrCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(56)))), ((int)(((byte)(15)))));
@@ -232,7 +229,7 @@
             this.btnCreateQrCode.Location = new System.Drawing.Point(759, 22);
             this.btnCreateQrCode.Name = "btnCreateQrCode";
             this.btnCreateQrCode.Size = new System.Drawing.Size(163, 29);
-            this.btnCreateQrCode.TabIndex = 8;
+            this.btnCreateQrCode.TabIndex = 9;
             this.btnCreateQrCode.Text = "Create QR codes";
             this.btnCreateQrCode.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreateQrCode.UseVisualStyleBackColor = false;
@@ -250,6 +247,60 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "ID generated for each book is done.";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // shapeContainer2
+            // 
+            this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
+            this.shapeContainer2.Margin = new System.Windows.Forms.Padding(0);
+            this.shapeContainer2.Name = "shapeContainer2";
+            this.shapeContainer2.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.rectangleShape2});
+            this.shapeContainer2.Size = new System.Drawing.Size(959, 72);
+            this.shapeContainer2.TabIndex = 0;
+            this.shapeContainer2.TabStop = false;
+            // 
+            // txtYearEdition
+            // 
+            this.txtYearEdition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
+            this.txtYearEdition.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtYearEdition.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtYearEdition.Location = new System.Drawing.Point(453, 255);
+            this.txtYearEdition.MaxLength = 4;
+            this.txtYearEdition.Name = "txtYearEdition";
+            this.txtYearEdition.Size = new System.Drawing.Size(117, 20);
+            this.txtYearEdition.TabIndex = 3;
+            this.txtYearEdition.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtYearEdition.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtYearEdition_KeyPress);
+            // 
+            // lblRequiredTitle
+            // 
+            this.lblRequiredTitle.FlatAppearance.BorderSize = 0;
+            this.lblRequiredTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblRequiredTitle.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredTitle.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredTitle.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblRequiredTitle.Location = new System.Drawing.Point(203, 89);
+            this.lblRequiredTitle.Name = "lblRequiredTitle";
+            this.lblRequiredTitle.Size = new System.Drawing.Size(83, 29);
+            this.lblRequiredTitle.TabIndex = 19;
+            this.lblRequiredTitle.Text = "*Required*";
+            this.lblRequiredTitle.UseVisualStyleBackColor = true;
+            // 
+            // btnNew
+            // 
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNew.Image = global::LibraryManagementSystem.Properties.Resources.Add_new;
+            this.btnNew.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNew.Location = new System.Drawing.Point(409, 13);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(76, 29);
+            this.btnNew.TabIndex = 6;
+            this.btnNew.Text = "New";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // label6
             // 
@@ -316,11 +367,12 @@
             this.picCover.BackgroundImage = global::LibraryManagementSystem.Properties.Resources.Cover;
             this.picCover.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.picCover.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picCover.Location = new System.Drawing.Point(35, 86);
+            this.picCover.Location = new System.Drawing.Point(27, 86);
             this.picCover.Name = "picCover";
-            this.picCover.Size = new System.Drawing.Size(200, 251);
+            this.picCover.Size = new System.Drawing.Size(168, 251);
             this.picCover.TabIndex = 4;
             this.picCover.TabStop = false;
+            this.picCover.Click += new System.EventHandler(this.picCover_Click);
             // 
             // btnReset
             // 
@@ -329,13 +381,14 @@
             this.btnReset.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReset.Image = global::LibraryManagementSystem.Properties.Resources.Reset_Filled;
             this.btnReset.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReset.Location = new System.Drawing.Point(586, 13);
+            this.btnReset.Location = new System.Drawing.Point(585, 13);
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(85, 29);
-            this.btnReset.TabIndex = 7;
+            this.btnReset.Size = new System.Drawing.Size(76, 29);
+            this.btnReset.TabIndex = 8;
             this.btnReset.Text = "Reset";
             this.btnReset.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnSave
             // 
@@ -344,13 +397,42 @@
             this.btnSave.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::LibraryManagementSystem.Properties.Resources.Save;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(489, 13);
+            this.btnSave.Location = new System.Drawing.Point(497, 13);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(85, 29);
-            this.btnSave.TabIndex = 6;
+            this.btnSave.Size = new System.Drawing.Size(76, 29);
+            this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // lblRequiredAuthor
+            // 
+            this.lblRequiredAuthor.FlatAppearance.BorderSize = 0;
+            this.lblRequiredAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblRequiredAuthor.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredAuthor.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblRequiredAuthor.Location = new System.Drawing.Point(203, 144);
+            this.lblRequiredAuthor.Name = "lblRequiredAuthor";
+            this.lblRequiredAuthor.Size = new System.Drawing.Size(83, 29);
+            this.lblRequiredAuthor.TabIndex = 20;
+            this.lblRequiredAuthor.Text = "*Required*";
+            this.lblRequiredAuthor.UseVisualStyleBackColor = true;
+            // 
+            // lblRequiredEdition
+            // 
+            this.lblRequiredEdition.FlatAppearance.BorderSize = 0;
+            this.lblRequiredEdition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblRequiredEdition.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredEdition.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredEdition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblRequiredEdition.Location = new System.Drawing.Point(203, 255);
+            this.lblRequiredEdition.Name = "lblRequiredEdition";
+            this.lblRequiredEdition.Size = new System.Drawing.Size(83, 29);
+            this.lblRequiredEdition.TabIndex = 21;
+            this.lblRequiredEdition.Text = "*Required*";
+            this.lblRequiredEdition.UseVisualStyleBackColor = true;
             // 
             // frmAddBook
             // 
@@ -358,12 +440,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(195)))));
             this.ClientSize = new System.Drawing.Size(1135, 670);
+            this.Controls.Add(this.txtYearEdition);
+            this.Controls.Add(this.btnNew);
             this.Controls.Add(this.pnIdGenerated);
             this.Controls.Add(this.btnBrowse);
             this.Controls.Add(this.numQty);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtIsbn);
-            this.Controls.Add(this.cboYearEdition);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtAuthor);
@@ -374,6 +457,9 @@
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblRequiredTitle);
+            this.Controls.Add(this.lblRequiredAuthor);
+            this.Controls.Add(this.lblRequiredEdition);
             this.Controls.Add(this.shapeContainer1);
             this.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -381,6 +467,7 @@
             this.Name = "frmAddBook";
             this.Text = "frmAddBook";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmAddBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numQty)).EndInit();
             this.pnIdGenerated.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picCover)).EndInit();
@@ -405,7 +492,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboYearEdition;
         private Microsoft.VisualBasic.PowerPacks.LineShape lineShape3;
         private System.Windows.Forms.TextBox txtIsbn;
         private System.Windows.Forms.Label label6;
@@ -416,5 +502,11 @@
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer2;
         private System.Windows.Forms.Button btnCreateQrCode;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnNew;
+        private Microsoft.VisualBasic.PowerPacks.LineShape lineShape4;
+        private System.Windows.Forms.TextBox txtYearEdition;
+        private System.Windows.Forms.Button lblRequiredTitle;
+        private System.Windows.Forms.Button lblRequiredAuthor;
+        private System.Windows.Forms.Button lblRequiredEdition;
     }
 }

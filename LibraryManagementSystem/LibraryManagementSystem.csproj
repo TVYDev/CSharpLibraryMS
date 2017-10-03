@@ -63,12 +63,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Api\CoverApi.cs" />
     <Compile Include="Api\BorrowingApi.cs" />
     <Compile Include="Api\LibrarianApi.cs" />
     <Compile Include="Api\MemberApi.cs" />
     <Compile Include="DomainModels\Book.cs" />
-    <Compile Include="DomainModels\BookCover.cs" />
     <Compile Include="DomainModels\Borrowing.cs" />
+    <Compile Include="DomainModels\Cover.cs" />
     <Compile Include="EntityConfigurations\BookConfigurations.cs" />
     <Compile Include="EntityConfigurations\LibrarianConfigurations.cs" />
     <Compile Include="EntityConfigurations\MemberConfigurations.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="DomainModels\Librarian.cs" />
     <Compile Include="LibraryContext.cs" />
     <Compile Include="DomainModels\Member.cs" />
+    <Compile Include="LibraryModule.cs" />
     <Compile Include="Migrations\201709240740099_InitialModel.cs" />
     <Compile Include="Migrations\201709240740099_InitialModel.Designer.cs">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
@@ -119,6 +121,14 @@
     <Compile Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.cs" />
     <Compile Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.Designer.cs">
       <DependentUpon>201710010854443_AddIsReturnedColumnToBorrowingTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710031733066_deleteBookCoverTable.cs" />
+    <Compile Include="Migrations\201710031733066_deleteBookCoverTable.Designer.cs">
+      <DependentUpon>201710031733066_deleteBookCoverTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710031739125_AddCoversTable.cs" />
+    <Compile Include="Migrations\201710031739125_AddCoversTable.Designer.cs">
+      <DependentUpon>201710031739125_AddCoversTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PredefinedRules.cs" />
@@ -153,6 +163,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201710010854443_AddIsReturnedColumnToBorrowingTable.resx">
       <DependentUpon>201710010854443_AddIsReturnedColumnToBorrowingTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710031733066_deleteBookCoverTable.resx">
+      <DependentUpon>201710031733066_deleteBookCoverTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710031739125_AddCoversTable.resx">
+      <DependentUpon>201710031739125_AddCoversTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -239,6 +255,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EverlastingJoy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

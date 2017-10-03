@@ -19,9 +19,6 @@ namespace LibraryManagementSystem.EntityConfigurations
             Property(b => b.AuthorName)
                 .HasMaxLength(255)
                 .IsRequired();
-
-            HasRequired(b => b.Cover)
-                .WithRequiredPrincipal(c => c.Book);
         }
     }
 }

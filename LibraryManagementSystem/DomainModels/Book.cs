@@ -1,4 +1,6 @@
-﻿namespace LibraryManagementSystem.DomainModels
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace LibraryManagementSystem.DomainModels
 {
     public class Book
     {
@@ -19,7 +21,5 @@
         public int GroupId { get; set; }
 
         public int CoverId { get; set; }
-
-        public BookCover Cover { get; set; }
     }
 }
