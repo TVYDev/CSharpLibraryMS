@@ -273,6 +273,16 @@ namespace LibraryManagementSystem.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tvy_admin {
+            get {
+                object obj = ResourceManager.GetObject("tvy_admin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Year_Edition {
             get {
                 object obj = ResourceManager.GetObject("Year_Edition", resourceCulture);

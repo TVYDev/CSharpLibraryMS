@@ -15,5 +15,7 @@
         public bool IsDeleted { get; set; }
 
         public byte[] Photo { get; set; }
+
+        //
     }
 }

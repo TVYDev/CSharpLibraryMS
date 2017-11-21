@@ -1,15 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using LibraryManagementSystem.Api;
-using LibraryManagementSystem.DomainModels;
-using DevOne.Security.Cryptography.BCrypt;
 
 namespace LibraryManagementSystem
 {
@@ -34,6 +24,8 @@ namespace LibraryManagementSystem
             Height = Screen.PrimaryScreen.WorkingArea.Height;
 
             pnDisplay.BackColor = this.BackColor;
+
+            LibraryModule.makePictureBoxRound(picAccount);
         }
 
         private void btnSearch_Click(object sender, EventArgs e)
@@ -78,6 +70,16 @@ namespace LibraryManagementSystem
 
         private void btnRegisterLibrarian_Click(object sender, EventArgs e)
         {
+            if (!pnDisplay.Controls.Contains(frmRegisterLibrarian.GetInstance))
+            {
+                pnDisplay.Controls.Clear();
+                var formRegisterLibrarian = frmRegisterLibrarian.GetInstance;
+                formRegisterLibrarian.TopLevel = false;
+                formRegisterLibrarian.BackColor = this.BackColor;
+                pnDisplay.Controls.Add(formRegisterLibrarian);
+                formRegisterLibrarian.Show();
+            }
+
             pnSelect.Height = btnRegisterLibrarian.Height;
             pnSelect.Top = btnRegisterLibrarian.Top;
         }

@@ -42,12 +42,14 @@
             this.btnBrowse = new System.Windows.Forms.Button();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.pnIdGenerated = new System.Windows.Forms.Panel();
-            this.btnCreateQrCode = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.txtYearEdition = new System.Windows.Forms.TextBox();
             this.lblRequiredTitle = new System.Windows.Forms.Button();
+            this.lblRequiredAuthor = new System.Windows.Forms.Button();
+            this.lblRequiredEdition = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
+            this.btnCreateQrCode = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.picCover = new System.Windows.Forms.PictureBox();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
-            this.lblRequiredAuthor = new System.Windows.Forms.Button();
-            this.lblRequiredEdition = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numQty)).BeginInit();
             this.pnIdGenerated.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCover)).BeginInit();
@@ -71,7 +71,7 @@
             this.label1.Size = new System.Drawing.Size(166, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Add new books";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // shapeContainer1
             // 
@@ -217,37 +217,6 @@
             this.pnIdGenerated.Size = new System.Drawing.Size(959, 72);
             this.pnIdGenerated.TabIndex = 16;
             // 
-            // btnCreateQrCode
-            // 
-            this.btnCreateQrCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(56)))), ((int)(((byte)(15)))));
-            this.btnCreateQrCode.FlatAppearance.BorderSize = 0;
-            this.btnCreateQrCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreateQrCode.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateQrCode.ForeColor = System.Drawing.Color.White;
-            this.btnCreateQrCode.Image = global::LibraryManagementSystem.Properties.Resources.QR_code;
-            this.btnCreateQrCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCreateQrCode.Location = new System.Drawing.Point(759, 22);
-            this.btnCreateQrCode.Name = "btnCreateQrCode";
-            this.btnCreateQrCode.Size = new System.Drawing.Size(163, 29);
-            this.btnCreateQrCode.TabIndex = 9;
-            this.btnCreateQrCode.Text = "Create QR codes";
-            this.btnCreateQrCode.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCreateQrCode.UseVisualStyleBackColor = false;
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(56)))), ((int)(((byte)(15)))));
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Image = global::LibraryManagementSystem.Properties.Resources.Done;
-            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label7.Location = new System.Drawing.Point(55, 24);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 25);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "ID generated for each book is done.";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // shapeContainer2
             // 
             this.shapeContainer2.Location = new System.Drawing.Point(0, 0);
@@ -286,6 +255,34 @@
             this.lblRequiredTitle.Text = "*Required*";
             this.lblRequiredTitle.UseVisualStyleBackColor = true;
             // 
+            // lblRequiredAuthor
+            // 
+            this.lblRequiredAuthor.FlatAppearance.BorderSize = 0;
+            this.lblRequiredAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblRequiredAuthor.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredAuthor.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblRequiredAuthor.Location = new System.Drawing.Point(203, 144);
+            this.lblRequiredAuthor.Name = "lblRequiredAuthor";
+            this.lblRequiredAuthor.Size = new System.Drawing.Size(83, 29);
+            this.lblRequiredAuthor.TabIndex = 20;
+            this.lblRequiredAuthor.Text = "*Required*";
+            this.lblRequiredAuthor.UseVisualStyleBackColor = true;
+            // 
+            // lblRequiredEdition
+            // 
+            this.lblRequiredEdition.FlatAppearance.BorderSize = 0;
+            this.lblRequiredEdition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblRequiredEdition.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRequiredEdition.ForeColor = System.Drawing.Color.Red;
+            this.lblRequiredEdition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblRequiredEdition.Location = new System.Drawing.Point(203, 255);
+            this.lblRequiredEdition.Name = "lblRequiredEdition";
+            this.lblRequiredEdition.Size = new System.Drawing.Size(83, 29);
+            this.lblRequiredEdition.TabIndex = 21;
+            this.lblRequiredEdition.Text = "*Required*";
+            this.lblRequiredEdition.UseVisualStyleBackColor = true;
+            // 
             // btnNew
             // 
             this.btnNew.FlatAppearance.BorderSize = 0;
@@ -301,6 +298,37 @@
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
+            // 
+            // btnCreateQrCode
+            // 
+            this.btnCreateQrCode.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(56)))), ((int)(((byte)(15)))));
+            this.btnCreateQrCode.FlatAppearance.BorderSize = 0;
+            this.btnCreateQrCode.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCreateQrCode.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreateQrCode.ForeColor = System.Drawing.Color.White;
+            this.btnCreateQrCode.Image = global::LibraryManagementSystem.Properties.Resources.QR_code;
+            this.btnCreateQrCode.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCreateQrCode.Location = new System.Drawing.Point(759, 22);
+            this.btnCreateQrCode.Name = "btnCreateQrCode";
+            this.btnCreateQrCode.Size = new System.Drawing.Size(163, 29);
+            this.btnCreateQrCode.TabIndex = 9;
+            this.btnCreateQrCode.Text = "Create QR codes";
+            this.btnCreateQrCode.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCreateQrCode.UseVisualStyleBackColor = false;
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(19)))), ((int)(((byte)(56)))), ((int)(((byte)(15)))));
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Image = global::LibraryManagementSystem.Properties.Resources.Done;
+            this.label7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label7.Location = new System.Drawing.Point(55, 24);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(288, 25);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "ID generated for each book is done.";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label6
             // 
@@ -405,34 +433,6 @@
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // lblRequiredAuthor
-            // 
-            this.lblRequiredAuthor.FlatAppearance.BorderSize = 0;
-            this.lblRequiredAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblRequiredAuthor.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRequiredAuthor.ForeColor = System.Drawing.Color.Red;
-            this.lblRequiredAuthor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblRequiredAuthor.Location = new System.Drawing.Point(203, 144);
-            this.lblRequiredAuthor.Name = "lblRequiredAuthor";
-            this.lblRequiredAuthor.Size = new System.Drawing.Size(83, 29);
-            this.lblRequiredAuthor.TabIndex = 20;
-            this.lblRequiredAuthor.Text = "*Required*";
-            this.lblRequiredAuthor.UseVisualStyleBackColor = true;
-            // 
-            // lblRequiredEdition
-            // 
-            this.lblRequiredEdition.FlatAppearance.BorderSize = 0;
-            this.lblRequiredEdition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblRequiredEdition.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRequiredEdition.ForeColor = System.Drawing.Color.Red;
-            this.lblRequiredEdition.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblRequiredEdition.Location = new System.Drawing.Point(203, 255);
-            this.lblRequiredEdition.Name = "lblRequiredEdition";
-            this.lblRequiredEdition.Size = new System.Drawing.Size(83, 29);
-            this.lblRequiredEdition.TabIndex = 21;
-            this.lblRequiredEdition.Text = "*Required*";
-            this.lblRequiredEdition.UseVisualStyleBackColor = true;
             // 
             // frmAddBook
             // 

@@ -87,6 +87,12 @@
     </Compile>
     <Compile Include="Api\BookApi.cs" />
     <Compile Include="DomainModels\Librarian.cs" />
+    <Compile Include="frmRegisterLibrarian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegisterLibrarian.Designer.cs">
+      <DependentUpon>frmRegisterLibrarian.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibraryContext.cs" />
     <Compile Include="DomainModels\Member.cs" />
     <Compile Include="LibraryModule.cs" />
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegisterLibrarian.resx">
+      <DependentUpon>frmRegisterLibrarian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709240740099_InitialModel.resx">
       <DependentUpon>201709240740099_InitialModel.cs</DependentUpon>
@@ -261,6 +270,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\EverlastingJoy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tvy_admin.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
